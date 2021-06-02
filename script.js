@@ -119,7 +119,7 @@ function moveBall() {
     ball.x + ball.size < paddle.x + paddle.w &&
     ball.y + ball.size > paddle.y
   ) {
-    paddle.dy = -ball.speed;
+    ball.dy = -ball.speed;
   }
   //Brick collision
   bricks.forEach(column => {
